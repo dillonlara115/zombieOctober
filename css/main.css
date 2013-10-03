@@ -166,6 +166,7 @@ nav {
 
   .is-expanded {
     background-color: #205B73;
+    background-attachment: fixed, fixed;
     padding: 1em 0 0;
     box-shadow: #333 5px 3px 10px 0px;
     z-index: 10;
