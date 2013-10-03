@@ -1,10 +1,38 @@
+.module {
+  -webkit-transition: background-color .5s, box-shadow .5s;
+  -ms-transition: background-color .5s, box-shadow .5s;
+  -moz-transition: background-color .5s, box-shadow .5s;
+  -o-transition: background-color .5s, box-shadow .5s;
+  transition: background-color .5s, box-shadow .5s;
+  width: 47%;
+  height: 100%;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 2px 5px 12px 3px #666;
+  margin-bottom: 2em;
+  float: left; }
+  .module > img {
+    width: 100%;
+    max-width: 960px; }
+  .module > h3, .module p {
+    padding: 0em 1em 0em 16px; }
+
+.first {
+  margin-right: 3em; }
+
+.module:hover {
+  -webkit-transition: background-color .5s, box-shadow .5s;
+  -ms-transition: background-color .5s, box-shadow .5s;
+  -moz-transition: background-color .5s, box-shadow .5s;
+  -o-transition: background-color .5s, box-shadow .5s;
+  transition: background-color .5s, box-shadow .5s;
+  box-shadow: none;
+  background-color: #e0e0e0; }
+
 body {
   background: #208C8C;
   background-image: linear-gradient(to left, rgba(32, 140, 140, 0.8) 0%, #208c8c 50%, rgba(32, 140, 140, 0.8) 100%), url(../images/dark_mosaic.png);
   background-attachment: fixed, fixed; }
-
-section {
-  padding-top: 6em; }
 
 header {
   position: fixed;
@@ -25,6 +53,15 @@ h1 {
   float: left;
   margin: .5em;
   font-weight: normal; }
+
+section {
+  margin: 0 auto;
+  z-index: 3;
+  padding: 4em 1em;
+  overflow: auto;
+  max-width: 960px;
+  width: 90%;
+  height: auto; }
 
 .navbar {
   display: none; }
@@ -101,13 +138,12 @@ nav {
   top: 0%;
   opacity: 1; }
 
-section {
-  z-index: 3;
-  padding: 4em .5em; }
-
 @media screen and (max-width: 880px) {
   section {
     padding: 4em .6em; }
+
+  .module {
+    width: 100%; }
 
   .navbar {
     display: block;
@@ -119,8 +155,7 @@ section {
       display: block;
       margin: 15px;
       font-size: 1.35em;
-      height: 28px;
-      width: 200px; }
+      height: 28px; }
 
   .is-open {
     display: inline-block;
@@ -132,7 +167,6 @@ section {
   .is-expanded {
     background-color: #205B73;
     padding: 1em 0 0;
-    width: 250px;
     box-shadow: #333 5px 3px 10px 0px;
     z-index: 10;
     position: fixed;

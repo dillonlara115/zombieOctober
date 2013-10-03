@@ -1,0 +1,35 @@
+.module {
+	-webkit-transition: background-color .5s, box-shadow .5s;
+	-ms-transition: background-color .5s, box-shadow .5s;
+	-moz-transition: background-color .5s, box-shadow .5s;
+	-o-transition: background-color .5s, box-shadow .5s;
+	transition: background-color .5s, box-shadow .5s;
+	width: 47%;
+	height: 100%;
+	display: inline-block;
+	background-color: #fff;
+	box-shadow: 2px 5px 12px 3px #666;
+	margin-bottom: 2em;
+	float: left;
+	> img {
+		width: 100%;
+		max-width: 960px;
+	}
+	> h3, p {
+		padding: 0em 1em 0em 16px;
+	}
+}
+
+.first {
+	margin-right: 3em;
+}
+
+.module:hover {
+	-webkit-transition: background-color .5s, box-shadow .5s;
+	-ms-transition: background-color .5s, box-shadow .5s;
+	-moz-transition: background-color .5s, box-shadow .5s;
+	-o-transition: background-color .5s, box-shadow .5s;
+	transition: background-color .5s, box-shadow .5s;
+	box-shadow: none;
+	background-color: darken(#fff, 12%);
+}
